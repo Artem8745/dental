@@ -88,7 +88,9 @@
                         <li class="main-text__item"><p>enhance practice efficiency</p></li>
                     </ul>
                 </div>
-                <button class="content-main__button"><a href="#contact-form">Build my strategy</a></button>
+                <form action="#contact-form">
+                    <button class="content-main__button">Build my strategy</button>
+                </form>
             </div>
         </div>
     </div>
@@ -252,7 +254,7 @@
                     </ul>
                 </div>
                 <form action="contact" class="contact__form">
-                    <input tabindex="1" type="user" name="user_name" aria-required="true" aria-invalid="false" class="contact__name">
+                    <input placeholder="Name" tabindex="1" type="text" name="user_name" aria-required="true" aria-invalid="false" class="contact__name">
                     <input autocomplete="email" placeholder="Email" tabindex="2" type="email" name="user_email" aria-required="true" aria-invalid="false" class="contact__email">
                     <input autocomplete="tel" placeholder="Phone" tabindex="3" type="tel" name="user_phone" aria-required="true" aria-invalid="false" class="contact__phone">
                     <button type="submit" tabindex="4" class="contact__button">Submit</button>

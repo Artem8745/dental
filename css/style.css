@@ -756,9 +756,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 6px;
   margin: 0 auto;
 }
-.contact .contact__container .contact__row .contact__form .content-main__button a {
-  color: #F8F8F8;
-}
 
 @media (max-width: 740px) {
   .contact .contact__container .contact__row {
