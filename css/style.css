@@ -746,7 +746,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact .contact__container .contact__row .contact__form .contact__name::placeholder, .contact .contact__container .contact__row .contact__form .contact__email::placeholder, .contact .contact__container .contact__row .contact__form .contact__phone::placeholder {
   color: #F8F8F8;
 }
-.contact .contact__container .contact__row .contact__form .contact__button {
+.contact .contact__container .contact__row .contact__form .content-main__button {
   width: 160px;
   height: 40px;
   background-color: #1F2326;
@@ -755,6 +755,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   border-radius: 6px;
   margin: 0 auto;
+}
+.contact .contact__container .contact__row .contact__form .content-main__button a {
+  color: #F8F8F8;
 }
 
 @media (max-width: 740px) {
