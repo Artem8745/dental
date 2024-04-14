@@ -1,0 +1,91 @@
+.what {
+    padding: 60px 0;
+
+    .what__container {
+        max-width: 900px;
+
+        .what__row {
+
+            .what__title {
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .what__body {
+
+                .what-input {
+                    margin: 10px 0;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #FF4656;
+                        border-radius: 2px;
+                    }
+
+                    .what-input__row {
+                        padding: 10px;
+                        margin: 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+
+                        .what-input__title {
+                            font-size: 22px;
+                            font-weight: 600;
+                        }
+
+                        .what-input__status{
+                            width: 20px;
+                            transition: all 0.5s ease;
+
+                            .what-input__status-plus img{
+                                width: 20px;
+                                max-width: 20px;
+                                -webkit-transition: all 0.3s ease;
+                                -moz-transition: all 0.3s ease;
+                                -o-transition: all 0.3s ease;
+                                transition: all 0.3s ease;
+                            }
+                        }
+                    }
+                    &._active .what-input__row-head .what-input__status .what-input__status-plus img{
+                        transform: rotate(45deg);
+                        -webkit-filter: #FF4656;
+                        filter: #FF4656;
+                    }
+
+
+                    .what-input__row-head{
+                        cursor: pointer;
+                    }
+
+                    .what-input__body {
+                        max-height: 0;
+                        overflow: hidden;
+
+                        -webkit-transition: max-height 1s ease;
+                        -moz-transition: max-height 1s ease;
+                        -o-transition: max-height 1s ease;
+                        transition: max-height 1s ease;
+
+                        .what-input__row {
+    
+                            .what-input__text {
+                                font-size: 18px;
+                                line-height: 28px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+
+                    &._active .what-input__body {
+                        max-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

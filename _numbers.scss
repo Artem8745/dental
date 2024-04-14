@@ -1,0 +1,59 @@
+.numbers{
+    background-color: #2f353a;
+
+    .numbers__container{
+        .numbers__row{
+
+            .numbers__body{
+                display: flex;
+                justify-content: space-around;
+
+                .numbers__section{
+                    margin: 40px 0px;
+                    padding: 10px;
+                    text-align: center;
+                    border: 2px dashed #eee;
+                    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+                    .numbers__title{
+                        color: #eee;
+                        font-size: 20px;
+                        margin-bottom: 18px;
+                    }
+
+                    .numbers__text{
+                        color: #eee;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 740px){
+    .numbers{
+        background-color: #2f353a;
+    
+        .numbers__container{
+            .numbers__row{
+    
+                .numbers__body{
+                    flex-direction: column;
+                    padding: 12px 0;
+
+                    .numbers__section{
+                        max-width: 200px;
+                        margin: 12px auto;
+    
+                        .numbers__title{
+                        }
+    
+                        .numbers__text{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: url('../image/main_fon_black.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    .main__container{
+        .content-main{
+            padding-top: 200px;
+            color: #eee;
+            max-width: 700px;
+            margin-left: 12px;
+
+            .content-main__title{
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 50px;
+            }
+
+            .main-text{
+                margin-bottom: 50px;
+
+                .main-text__title{
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    color: #F8F8F8;
+                }
+    
+                .main-text__list{
+                    .main-text__item{
+                        margin: 0px 0px 0px 20px;
+    
+    
+                        & p{
+                            font-size: 18px;
+                            font-weight: 300;
+                            margin: 12px 0;
+
+                            &::before{
+                                content: '';
+                                display: inline-block;
+                                width: 10px;
+                                height: 10px;
+                                background-color: #D2D2D2;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-main__button{
+                width: 170px;
+                height: 52px;
+                border-radius: 10px;
+                background-color: #344756;
+                color: #eee;
+                
+                font-size: 18px;
+                font-weight: 200;
+                
+                transition: all 0.2s ease-in-out;
+
+                &:hover{
+                    background-color: #3e4c64;
+                    box-shadow: 0px 0px 10px #D2D2D2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 470px){
+    .main{
+    
+        .main__container{
+            .content-main{
+                margin: 0 10px;
+    
+                .content-main__title{
+                    text-align: center;
+                }
+            }
+
+            a{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

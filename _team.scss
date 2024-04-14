@@ -1,0 +1,110 @@
+.team {
+    background-color: #FF4656;
+    padding: 20px 0;
+
+    .team__container {
+
+        .team__row {
+            padding: 40px;
+
+            .team__body {
+                display: flex;
+                height: 540px;
+
+                .team__title {
+                    font-size: 80px;
+                    font-weight: 600;
+                    writing-mode:vertical-rl;
+                }
+                .worker-team {
+                    width: 320px;
+                    height: 100%;
+                    background-color: #1F2326;
+                    border-top-left-radius: 10px;
+                    position: relative;
+
+                    margin: 0 20px;
+
+                    .worker-team__title {
+                        color: #FF4656;
+                        font-size: 24px;
+                        font-weight: 600;
+                        display: flex;
+                        margin: 10px 0px 10px 0px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+
+                        .worker-team__name {
+                            margin-right: 8px;
+                        }
+                        .worker-team__surname {
+                        }
+                    }
+
+                    .worker-team__image img{
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                    }
+
+                    .worker-team__specialty-footer{
+                        width: 100%;
+                        height: 50px;
+                        background-color: #1F2326;
+                        border: 1px solid #F8F8F8;
+                        position: absolute;
+                        bottom: -20px;
+                        right: -26px;
+
+                        & p{
+                            height: 100%;
+                            color: #F8F8F8;
+                            font-size: 24px;
+                            font-weight: 400;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px){
+    .team {
+        background-color: #FF4656;
+        padding: 20px 0;
+    
+        .team__container {
+    
+            .team__row {
+                min-height: 1300px;
+
+                @media (max-width: 816px){
+                    min-height: 1900px;
+                }
+    
+                .team__body {
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .team__title {
+                        writing-mode: horizontal-tb;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    .worker-team {
+                        margin: 20px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
